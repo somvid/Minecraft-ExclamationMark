@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "exclamation",
+  "version": "${version}",
+
+  "name": "Exclamation",
+  "description": "Drawing exclamation mark",
+  "authors": [
+    "DasomKwon"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/exclamation/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.dasom.exclamation.fabricmod.FabricModExclamation"
+    ]
+  },
+  "mixins": [
+    "Exclamation.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.14.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
